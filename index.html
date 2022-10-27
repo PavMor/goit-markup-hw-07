@@ -91,7 +91,7 @@
                       id="name"
                       autofocus
                     />
-                    <svg class="form-name__icon--man">
+                    <svg class="form-name__icon-man">
                       <use href="./images/symbol-defs.svg#icon-man"></use>
                     </svg>
                   </label>
@@ -106,7 +106,7 @@
                       id="tel"
                       autofocus
                     />
-                    <svg class="form-tel__icon--tube">
+                    <svg class="form-tel__icon-tube">
                       <use href="./images/symbol-defs.svg#icon-tube"></use>
                     </svg>
                   </label>
@@ -121,7 +121,7 @@
                       id="mail"
                       autofocus
                     />
-                    <svg class="form-mail__icon--email">
+                    <svg class="form-mail__icon-email">
                       <use href="./images/symbol-defs.svg#icon-email"></use>
                     </svg>
                   </label>
@@ -167,8 +167,8 @@
         <div class="container">
           <div class="advantages">
             <h2 hidden>Складові</h2>
-            <ul class="advantages-list">
-              <li class="list-item">
+            <ul class="advantages__list">
+              <li class="advantages__item">
                 <div class="antenna">
                   <svg class="icon-antenna">
                     <use href="./images/symbol-defs.svg#icon-antenna"></use>
@@ -180,7 +180,7 @@
                   формування позиції.
                 </p>
               </li>
-              <li class="list-item">
+              <li class="advantages__item">
                 <div class="clock">
                   <svg class="icon-clock">
                     <use href="./images/symbol-defs.svg#icon-clock"></use>
@@ -192,7 +192,7 @@
                   тягне у себе.
                 </p>
               </li>
-              <li class="list-item">
+              <li class="advantages__item">
                 <div class="diagram">
                   <svg class="icon-diagram">
                     <use href="./images/symbol-defs.svg#icon-diagram"></use>
@@ -204,7 +204,7 @@
                   зумовлює.
                 </p>
               </li>
-              <li class="list-item">
+              <li class="advantages__item">
                 <div class="astronaut">
                   <svg class="icon-astronaut">
                     <use href="./images/symbol-defs.svg#icon-astronaut"></use>
@@ -221,12 +221,13 @@
         </div>
       </section>
 
+      <!-- section our projects -->
       <section class="projects-section">
         <div class="projects-container">
           <div class="projects">
             <h2>Чим ми займаємося</h2>
-            <ul class="projects-list">
-              <li class="projects-item">
+            <ul class="projects__list">
+              <li class="projects__item">
                 <img
                   class="project-image"
                   src="./images/desktop-apps-dev.jpg"
@@ -238,7 +239,7 @@
                   <p class="project-text">Десктопні додатки</p>
                 </div>
               </li>
-              <li class="projects-item">
+              <li class="projects__item">
                 <img
                   class="project-image"
                   src="./images/mobile-apps-dev.jpg"
@@ -250,7 +251,7 @@
                   <p class="project-text">Мобільні додатки</p>
                 </div>
               </li>
-              <li class="projects-item">
+              <li class="projects__item">
                 <img
                   class="project-image"
                   src="./images/web-design.jpg"
@@ -267,26 +268,27 @@
         </div>
       </section>
 
+      <!-- section our team -->
       <section class="cards-section">
         <div class="team-cards-container">
           <div class="team-cards">
             <!-- Initial tegs are layed out to create cards in separate divs -->
             <h2>Наша команда</h2>
-            <ul class="team-cards-list">
-              <li class="cards-item">
+            <ul class="team-cards__list">
+              <li class="team-cards__item">
                 <img
                   src="./images/igor-demianenko.jpg"
                   alt="фото Ігоря Дем'яненко"
                   width="270"
                   height="260"
                 />
-                <div class="cards-text">
+                <div class="team-cards__text">
                   <h3>Ігор Дем'яненко</h3>
                   <p>Product Designer</p>
-                  <ul class="websites">
+                  <ul class="team-cards__websites">
                     <li>
                       <a href="#" class="websites-links">
-                        <svg class="icon-instagram">
+                        <svg class="instagram-icon">
                           <use
                             href="./images/symbol-defs.svg#icon-instagram"
                             class="instagram"
@@ -296,7 +298,7 @@
                     </li>
                     <li>
                       <a href="#" class="websites-links">
-                        <svg class="icon-twitter">
+                        <svg class="twitter-icon">
                           <use
                             href="./images/symbol-defs.svg#icon-twitter"
                             class="twitter"
@@ -306,7 +308,7 @@
                     </li>
                     <li>
                       <a href="#" class="websites-links">
-                        <svg class="icon-facebook">
+                        <svg class="facebook-icon">
                           <use
                             href="./images/symbol-defs.svg#icon-facebook"
                             class="facebook"
@@ -316,7 +318,7 @@
                     </li>
                     <li>
                       <a href="#" class="websites-links">
-                        <svg class="icon-linkedin">
+                        <svg class="linkedin-icon">
                           <use
                             href="./images/symbol-defs.svg#icon-linkedin"
                             class="linkedin"
@@ -327,20 +329,20 @@
                   </ul>
                 </div>
               </li>
-              <li class="cards-item">
+              <li class="team-cards__item">
                 <img
                   src="./images/olga-repina.jpg"
                   alt="фото Ольги Рєпіної"
                   width="270"
                   height="260"
                 />
-                <div class="cards-text">
+                <div class="team-cards__text">
                   <h3>Ольга Рєпіна</h3>
                   <p>Frontend Developer</p>
-                  <ul class="websites">
+                  <ul class="team-cards__websites">
                     <li>
                       <a href="#" class="websites-links">
-                        <svg class="icon-instagram">
+                        <svg class="instagram-icon">
                           <use
                             href="./images/symbol-defs.svg#icon-instagram"
                             class="instagram"
@@ -350,7 +352,7 @@
                     </li>
                     <li>
                       <a href="#" class="websites-links">
-                        <svg class="icon-twitter">
+                        <svg class="twitter-icon">
                           <use
                             href="./images/symbol-defs.svg#icon-twitter"
                             class="twitter"
@@ -360,7 +362,7 @@
                     </li>
                     <li>
                       <a href="#" class="websites-links">
-                        <svg class="icon-facebook">
+                        <svg class="facebook-icon">
                           <use
                             href="./images/symbol-defs.svg#icon-facebook"
                             class="facebook"
@@ -370,7 +372,7 @@
                     </li>
                     <li>
                       <a href="#" class="websites-links">
-                        <svg class="icon-linkedin">
+                        <svg class="linkedin-icon">
                           <use
                             href="./images/symbol-defs.svg#icon-linkedin"
                             class="linkedin"
@@ -381,20 +383,20 @@
                   </ul>
                 </div>
               </li>
-              <li class="cards-item">
+              <li class="team-cards__item">
                 <img
                   src="./images/mykola-tarasov.jpg"
                   alt="фото Миколи Тарасова"
                   width="270"
                   height="260"
                 />
-                <div class="cards-text">
+                <div class="team-cards__text">
                   <h3>Микола Тарасов</h3>
                   <p>Marketing</p>
-                  <ul class="websites">
+                  <ul class="team-cards__websites">
                     <li>
                       <a href="#" class="websites-links">
-                        <svg class="icon-instagram">
+                        <svg class="instagram-icon">
                           <use
                             href="./images/symbol-defs.svg#icon-instagram"
                             class="instagram"
@@ -404,7 +406,7 @@
                     </li>
                     <li>
                       <a href="#" class="websites-links">
-                        <svg class="icon-twitter">
+                        <svg class="twitter-icon">
                           <use
                             href="./images/symbol-defs.svg#icon-twitter"
                             class="twitter"
@@ -414,7 +416,7 @@
                     </li>
                     <li>
                       <a href="#" class="websites-links">
-                        <svg class="icon-facebook">
+                        <svg class="facebook-icon">
                           <use
                             href="./images/symbol-defs.svg#icon-facebook"
                             class="facebook"
@@ -424,7 +426,7 @@
                     </li>
                     <li>
                       <a href="#" class="websites-links">
-                        <svg class="icon-linkedin">
+                        <svg class="linkedin-icon">
                           <use
                             href="./images/symbol-defs.svg#icon-linkedin"
                             class="linkedin"
@@ -435,20 +437,20 @@
                   </ul>
                 </div>
               </li>
-              <li class="cards-item">
+              <li class="team-cards__item">
                 <img
                   src="./images/mykhaylo-yermakov.jpg"
                   alt="фото Михайла Єрмакова"
                   width="270"
                   height="260"
                 />
-                <div class="cards-text">
+                <div class="team-cards__text">
                   <h3>Михайло Єрмаков</h3>
                   <p>UI Designer</p>
-                  <ul class="websites">
+                  <ul class="team-cards__websites">
                     <li>
                       <a href="#" class="websites-links">
-                        <svg class="icon-instagram">
+                        <svg class="instagram-icon">
                           <use
                             href="./images/symbol-defs.svg#icon-instagram"
                             class="instagram"
@@ -458,7 +460,7 @@
                     </li>
                     <li>
                       <a href="#" class="websites-links">
-                        <svg class="icon-twitter">
+                        <svg class="twitter-icon">
                           <use
                             href="./images/symbol-defs.svg#icon-twitter"
                             class="twitter"
@@ -468,7 +470,7 @@
                     </li>
                     <li>
                       <a href="#" class="websites-links">
-                        <svg class="icon-facebook">
+                        <svg class="facebook-icon">
                           <use
                             href="./images/symbol-defs.svg#icon-facebook"
                             class="facebook"
@@ -478,7 +480,7 @@
                     </li>
                     <li>
                       <a href="#" class="websites-links">
-                        <svg class="icon-linkedin">
+                        <svg class="linkedin-icon">
                           <use
                             href="./images/symbol-defs.svg#icon-linkedin"
                             class="linkedin"

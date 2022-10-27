@@ -107,7 +107,7 @@
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    &:focus ~ .form-name__icon--man {
+    &:focus ~ .form-name__icon-man {
       fill: $accent-color;
 
       transition-property: fill;
@@ -115,7 +115,7 @@
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
   }
-  &__icon--man {
+  &__icon-man {
     position: absolute;
     top: 32px;
     left: 15px;
@@ -129,117 +129,117 @@
   position: relative;
   display: flex;
   flex-direction: column;
-}
 
-.form-tel__label {
-  display: flex;
-  flex-wrap: wrap;
-  align-self: start;
-  margin: 0;
-  margin-bottom: 4px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
-  color: $primary-text-color;
-  cursor: pointer;
-}
+  &__label {
+    display: flex;
+    flex-wrap: wrap;
+    align-self: start;
+    margin: 0;
+    margin-bottom: 4px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: $primary-text-color;
+    cursor: pointer;
+  }
 
-.form-tel__input {
-  display: flex;
-  margin-top: 4px;
-  margin-bottom: 10px;
-  padding-left: 42px;
-  width: 448px;
-  height: 40px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  cursor: pointer;
-  outline: none;
-}
+  &__input {
+    display: flex;
+    margin-top: 4px;
+    margin-bottom: 10px;
+    padding-left: 42px;
+    width: 448px;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
 
-.form-tel__icon--tube {
-  position: absolute;
-  top: 32px;
-  left: 15px;
-  width: 13px;
-  height: 13px;
-  cursor: pointer;
-}
+    &:focus {
+      border: 1px solid $accent-color;
 
-.form-tel__input:focus ~ .form-tel__icon--tube {
-  fill: $accent-color;
+      transition-property: border;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
 
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+    &:focus ~ .form-tel__icon-tube {
+      fill: $accent-color;
 
-.form-tel__input:focus {
-  border: 1px solid $accent-color;
+      transition-property: fill;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
 
-  transition-property: border;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &__icon-tube {
+    position: absolute;
+    top: 32px;
+    left: 15px;
+    width: 13px;
+    height: 13px;
+    cursor: pointer;
+  }
 }
 
 .form-mail {
   position: relative;
   display: flex;
   flex-direction: column;
-}
 
-.form-mail__label {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0;
-  align-self: start;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
-  color: $primary-text-color;
-  cursor: pointer;
-}
+  &__label {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    align-self: start;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: $primary-text-color;
+    cursor: pointer;
+  }
 
-.form-mail__input {
-  display: flex;
-  margin-top: 4px;
-  margin-bottom: 10px;
-  padding-left: 42px;
-  width: 448px;
-  height: 40px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  cursor: pointer;
-  outline: none;
-}
+  &__input {
+    display: flex;
+    margin-top: 4px;
+    margin-bottom: 10px;
+    padding-left: 42px;
+    width: 448px;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
 
-.form-mail__icon--email {
-  position: absolute;
-  top: 32px;
-  left: 15px;
-  width: 15px;
-  height: 12px;
-  cursor: pointer;
-}
+    &:focus {
+      border: 1px solid $accent-color;
 
-.form-mail__input:focus ~ .form-mail__icon--email {
-  fill: $accent-color;
+      transition-property: border;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
 
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+    &:focus ~ .form-mail__icon-email {
+      fill: $accent-color;
 
-.form-mail__input:focus {
-  border: 1px solid $accent-color;
+      transition-property: fill;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
 
-  transition-property: border;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &__icon-email {
+    position: absolute;
+    top: 32px;
+    left: 15px;
+    width: 15px;
+    height: 12px;
+    cursor: pointer;
+  }
 }
 
 .form-comment__label {
@@ -274,57 +274,58 @@
   color: rgba(117, 117, 117, 0.5);
   cursor: pointer;
   outline: none;
-}
 
-.form-comment__textarea:focus {
-  border: 1px solid $accent-color;
+  &:focus {
+    border: 1px solid $accent-color;
 
-  transition-property: border;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 .form-checkbox {
   position: relative;
-}
-.form-checkbox__input {
-  margin-bottom: 30px;
-  cursor: pointer;
-  visibility: hidden;
-}
 
-.form-checkbox__label {
-  display: flex;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: $primary-text-color;
-  margin-left: 37px;
-  cursor: pointer;
-}
+  &__input {
+    margin-bottom: 30px;
+    cursor: pointer;
+    visibility: hidden;
 
-.form-checkbox__icon {
-  position: absolute;
-  top: 4px;
-  left: 12px;
-  width: 16px;
-  height: 15px;
-  border: 2px solid $secondary-text-color;
-  border-radius: 2px;
+    &:checked + .form-checkbox__icon {
+      border-color: transparent;
+      background-color: $accent-color;
+      background-image: url(../images/chekbox.svg);
+      background-size: contain;
+      background-origin: border-box;
+    }
+  }
 
-  transition-property: border;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+  &__label {
+    display: flex;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $primary-text-color;
+    margin-left: 37px;
+    cursor: pointer;
+  }
 
-.form-checkbox__input:checked + .form-checkbox__icon {
-  border-color: transparent;
-  background-color: $accent-color;
-  background-image: url(../images/chekbox.svg);
-  background-size: contain;
-  background-origin: border-box;
+  &__icon {
+    position: absolute;
+    top: 4px;
+    left: 12px;
+    width: 16px;
+    height: 15px;
+    border: 2px solid $secondary-text-color;
+    border-radius: 2px;
+
+    transition-property: border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 .agreement {
