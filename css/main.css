@@ -1118,7 +1118,16 @@ li {
   margin-top: 0;
   margin-left: 0;
 }
-
+.team-cards h2 {
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
 .team-cards__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1130,17 +1139,11 @@ li {
   margin: 0;
   padding-left: 0;
 }
-
 .team-cards__list .team-cards__item {
   margin-right: 30px;
   margin-top: 0;
   margin-bottom: 0;
 }
-
-.team-cards .team-cards__item:last-child {
-  margin-right: 0;
-}
-
 .team-cards__item {
   width: 270px;
   background: #ffffff;
@@ -1149,25 +1152,12 @@ li {
   border-radius: 0px 0px 4px 4px;
   margin-bottom: 94px;
 }
-
+.team-cards__item:last-child {
+  margin-right: 0;
+}
 .team-cards__text {
   padding-top: 30px;
   padding-bottom: 30px;
-}
-
-.team-cards__text p {
-  padding-bottom: 16px;
-}
-
-.team-cards h2 {
-  margin-top: 0;
-  margin-bottom: 50px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
 }
 
 .team-cards__text h3 {
@@ -1184,6 +1174,7 @@ li {
 
 .team-cards__text p {
   margin: 0;
+  padding-bottom: 16px;
   text-align: center;
   font-weight: 400;
   font-size: 16px;
@@ -1228,9 +1219,7 @@ li {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.websites-links:hover,
-.websites-links:focus {
+.websites-links:hover, .websites-links:focus {
   background-color: #2196f3;
   fill: #ffffff;
 }

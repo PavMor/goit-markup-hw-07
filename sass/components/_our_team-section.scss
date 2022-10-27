@@ -14,52 +14,48 @@
 .team-cards {
   margin-top: 0;
   margin-left: 0;
-}
 
-.team-cards__list {
-  display: flex;
-  flex-direction: row;
-  margin: 0;
-  padding-left: 0;
-}
+  & h2 {
+    margin-top: 0;
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $secondary-text-color;
+  }
 
-.team-cards__list .team-cards__item {
-  margin-right: 30px;
-  margin-top: 0;
-  margin-bottom: 0;
-}
+  &__list {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding-left: 0;
 
-.team-cards .team-cards__item:last-child {
-  margin-right: 0;
-}
+    & .team-cards__item {
+      margin-right: 30px;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
 
-.team-cards__item {
-  width: 270px;
-  background: #ffffff;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-  margin-bottom: 94px;
-}
+  &__item {
+    width: 270px;
+    background: #ffffff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    margin-bottom: 94px;
 
-.team-cards__text {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 
-.team-cards__text p {
-  padding-bottom: 16px;
-}
-
-.team-cards h2 {
-  margin-top: 0;
-  margin-bottom: 50px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: $secondary-text-color;
+  &__text {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }
 
 .team-cards__text h3 {
@@ -77,6 +73,7 @@
 
 .team-cards__text p {
   margin: 0;
+  padding-bottom: 16px;
   text-align: center;
   font-weight: 400;
   font-size: 16px;
@@ -95,9 +92,7 @@
 }
 
 .websites-links {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include centered-flex();
   width: 44px;
   height: 44px;
   border: none;
@@ -109,12 +104,12 @@
   transition-property: background-color, fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.websites-links:hover,
-.websites-links:focus {
-  background-color: $accent-color;
-  fill: #ffffff;
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    fill: #ffffff;
+  }
 }
 
 .instagram-icon {
