@@ -37,7 +37,7 @@ li {
   border-bottom: 1px solid #ececec;
 }
 
-.nav-header {
+.nav {
   display: flex;
   flex-direction: row;
   background-color: var(--header-bg-color);

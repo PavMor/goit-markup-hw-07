@@ -11,38 +11,33 @@
       rel="stylesheet"
     />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-    />
-
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
   <body>
     <header class="header">
       <div class="container">
-        <nav class="nav-header">
+        <nav class="nav">
           <!-- Logo -->
           <a href="./index.html" lang="en" class="logo">
             <span class="logo-span">Web</span>Studio</a
           >
-          <ul class="nav-list">
-            <li class="nav-item">
+          <ul class="nav__list">
+            <li class="nav__item">
               <a href="./index.html" class="link-nav current">Студія</a>
             </li>
-            <li class="nav-item">
+            <li class="nav__item">
               <a href="./portfolio.html" class="link-nav">Портфоліо</a>
             </li>
-            <li class="nav-item">
+            <li class="nav__item">
               <a href="./index.html" class="link-nav">Контакти</a>
             </li>
           </ul>
         </nav>
 
         <ul class="poc">
-          <li class="poc-item">
-            <a href="./index.html" class="link-poc"
+          <li class="poc__item">
+            <a href="./index.html" class="poc__link"
               ><svg class="icon-envelope">
                 <use
                   href="./images/symbol-defs.svg#icon-envelope"
@@ -52,8 +47,8 @@
               info@devstudio.com</a
             >
           </li>
-          <li class="poc-item">
-            <a href="./index.html" class="link-poc"
+          <li class="poc__item">
+            <a href="./index.html" class="poc__link"
               ><svg class="icon-smartphone">
                 <use
                   href="./images/symbol-defs.svg#icon-smartphone"
@@ -70,11 +65,11 @@
     <main>
       <div class="hero-container">
         <div class="hero">
-          <h1 class="hero-title">
+          <h1 class="hero__title">
             Ефективні рішення для <br />
             вашого бізнесу
           </h1>
-          <button data-modal-open type="button" class="hero-btn">
+          <button data-modal-open type="button" class="hero__btn">
             Замовити послугу
           </button>
           <div class="backdrop is-hidden" data-modal>
@@ -87,55 +82,55 @@
               <form class="request-call">
                 <h2>Залиште свої дані, ми вам передзвонимо</h2>
                 <div class="form-name">
-                  <label class="form-name-label" for="name"
+                  <label class="form-name__label" for="name"
                     >Ім'я
                     <input
-                      class="form-name-input"
+                      class="form-name__input"
                       type="text"
                       name="name"
                       id="name"
                       autofocus
                     />
-                    <svg class="icon-man">
+                    <svg class="form-name__icon--man">
                       <use href="./images/symbol-defs.svg#icon-man"></use>
                     </svg>
                   </label>
                 </div>
                 <div class="form-tel">
-                  <label class="form-tel-label" for="tel"
+                  <label class="form-tel__label" for="tel"
                     >Телефон
                     <input
-                      class="form-tel-input"
+                      class="form-tel__input"
                       type="tel"
                       name="tel"
                       id="tel"
                       autofocus
                     />
-                    <svg class="icon-tube">
+                    <svg class="form-tel__icon--tube">
                       <use href="./images/symbol-defs.svg#icon-tube"></use>
                     </svg>
                   </label>
                 </div>
                 <div class="form-mail">
-                  <label class="form-mail-label" for="mail"
+                  <label class="form-mail__label" for="mail"
                     >Пошта
                     <input
-                      class="form-mail-input"
+                      class="form-mail__input"
                       type="email"
                       name="mail"
                       id="mail"
                       autofocus
                     />
-                    <svg class="icon-email">
+                    <svg class="form-mail__icon--email">
                       <use href="./images/symbol-defs.svg#icon-email"></use>
                     </svg>
                   </label>
                 </div>
                 <div class="form-comment">
-                  <label class="form-comment-label" for="comment"
+                  <label class="form-comment__label" for="comment"
                     >Коментар
                     <textarea
-                      class="form-comment-textarea"
+                      class="form-comment__textarea"
                       name="comment"
                       id="comments"
                       rows="5"
@@ -144,20 +139,23 @@
                   </label>
                 </div>
                 <div class="form-checkbox">
-                  <label class="form-checkbox-label" for="agreement"
-                    >Погоджуюся з розсилкою та приймаю<a href="./index.html"></a>
+                  <label class="form-checkbox__label" for="agreement"
+                    >Погоджуюся з розсилкою та приймаю&nbsp
+                    <a class="agreement" href="./index.html" lang="en">
                       Умови договору</a
                     >
                     <input
-                      class="form-checkbox-input"
+                      class="form-checkbox__input"
                       type="checkbox"
                       name="agreement"
                       id="agreement"
                     />
-                    <span class="checkbox-icon"></span>
+                    <span class="form-checkbox__icon"></span>
                   </label>
                 </div>
-                <button type="submit" class="modal-send-btn">Відправити</button>
+                <button type="submit" class="modal__send-btn">
+                  Відправити
+                </button>
               </form>
             </div>
           </div>
